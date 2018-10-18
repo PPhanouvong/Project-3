@@ -1,0 +1,12 @@
+#Footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+  }
+
+  #Name {
+    font-weight: bold;
+    font-size: 18px;
+  }
