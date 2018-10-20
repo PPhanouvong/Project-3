@@ -7,13 +7,15 @@ import MyContainer from './components/Container';
 class App extends Component {
   render() {
     return (
-      <div id="Nav">
-        <MyNavbar />
-        
+      <div>
+        <div>
+          <MyNavbar />
+        </div>
+
         <div>
           <MyContainer />
         </div>
-        
+
         <div>
           <MyFooter />
         </div>

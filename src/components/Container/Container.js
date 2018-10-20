@@ -1,13 +1,13 @@
 import React from 'react';
 import './Container.css';
+import SearchForm from '../SearchForm';
 
-
-const MyContainer = props => {
+const MyContainer = () => {
     return (
         <div>
-            
-            Test Text
-
+            <div>
+                <SearchForm />
+            </div>
         </div>
     );
 };

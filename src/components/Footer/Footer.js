@@ -13,14 +13,14 @@ const MyFooter = () => {
                 // }
                 links={
                     <ul>
-                        <li><a id='Name' className="grey-text text-lighten-3">Jacob Castro </a><a className="grey-text text-lighten-3" href="https://github.com/jcastro72"><img src={GitHub} alt="GitHub" /></a> <a className="grey-text text-lighten-3" href="https://www.linkedin.com/in/jacob-castro-26350215b/"><img src={LinkedIn} alt="LinkedIn" /></a></li>
-                        <li><a id='Name' className="grey-text text-lighten-3">Phokham Phanouvong </a><a className="grey-text text-lighten-3" href="https://github.com/PPhanouvong"><img src={GitHub} alt="GitHub" /></a> <a className="grey-text text-lighten-3" href="https://www.linkedin.com/in/phokham-phanouvong-7b289b56/"><img src={LinkedIn} alt="LinkedIn" /></a></li>
+                        <li><a id='Name' className="grey-text text-lighten-3">Jacob Castro </a> <a className="grey-text text-lighten-3" href="https://www.linkedin.com/in/jacob-castro-26350215b/"> <img id='FIcon' src={LinkedIn} alt="LinkedIn" /></a> <a className="grey-text text-lighten-3" href="https://github.com/jcastro72"><img id='FIcon' src={GitHub} alt="GitHub" /></a></li>
+                        <li><a id='Name' className="grey-text text-lighten-3">Phokham Phanouvong </a> <a className="grey-text text-lighten-3" href="https://www.linkedin.com/in/phokham-phanouvong-7b289b56/"> <img id='FIcon' src={LinkedIn} alt="LinkedIn" /></a><a className="grey-text text-lighten-3" href="https://github.com/PPhanouvong"><img id='FIcon' src={GitHub} alt="GitHub" /></a></li>
                     </ul>
                 }
                 className='black'
             >
-                <h5 className="white-text">Project Team</h5>
-                <p className="grey-text text-lighten-4">Project built for University of Central Florida Coding Bootcamp</p>
+                <h4 className="white-text">Project Team</h4>
+                <p id='FMessage' className="grey-text text-lighten-4">Project built for University of Central Florida Coding Bootcamp</p>
             </Footer>
         </div>
     );

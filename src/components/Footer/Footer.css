@@ -4,9 +4,27 @@
     left: 0;
     right: 0;
     background-color: black;
+    z-index: -999;
+  }
+
+  h4 {
+    Font-weight: bold;
   }
 
   #Name {
-    font-weight: bold;
-    font-size: 18px;
+    position: relative;
+    font-size: 20px;
+    left: 5%;
+  }
+
+  #FMessage {
+    font-size: 20px;
+    position: relative;
+    left: 5%;
+  }
+
+  #FIcon {
+    width: 24px;
+    position: relative;
+    left: 10%;
   }
