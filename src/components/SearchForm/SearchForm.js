@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './SearchForm.css';
+import { Tabs, Tab } from 'react-materialize';
 
 const axios = require("axios");
 
@@ -108,13 +109,66 @@ class SearchForm extends Component {
           />
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
-
-        <div className="playercasualdeaths">{this.state.r6casualdeaths}</div>
+        <Tabs className='grey-text tabs tabs-fixed-width tab-demo z-depth-20' id="uncontrolled-tab-example">
+          <Tab title="Casual">
+            Kills: {this.state.r6casualkills}
+            <br></br>
+            Deaths: {this.state.r6casualdeaths}
+            <br></br>
+            KD: {this.state.r6casualkd}
+            <br></br>
+            Wins: {this.state.r6casualwins}
+            <br></br>
+            Losses: {this.state.r6casuallosses}
+            <br></br>
+            WLR: {this.state.r6casualwlr}
+            <br></br>
+          </Tab>
+          <Tab title="Ranked">
+            Kills: {this.state.r6rankedkills}
+            <br></br>
+            Deaths: {this.state.r6rankeddeaths}
+            <br></br>
+            KD: {this.state.r6rankedkd}
+            <br></br>
+            Wins: {this.state.r6rankedwins}
+            <br></br>
+            Losses: {this.state.r6rankedlosses}
+            <br></br>
+            WLR: {this.state.r6rankedwlr}
+          </Tab>
+          <Tab title="Overall">
+            assists: {this.state.r6overallassists}
+            <br></br>
+            barricades built: {this.state.r6overallbarricades_built}
+            <br></br>
+            bullets fired: {this.state.r6overallbullets_fired}
+            <br></br>
+            bullets hit: {this.state.r6overallbullets_hit}
+            <br></br>
+            headshots: {this.state.r6overallheadshots}
+            <br></br>
+            melee kills: {this.state.r6overallmelee_kills} 
+            <br></br>
+            pentration kills: {this.state.r6overallpentration_kills}
+            <br></br>
+            reinforcements deployed: {this.state.r6overallreinforcements_deployed}
+            <br></br>
+            revives: {this.state.r6overallrevives}
+            <br></br>
+            steps moved: {this.state.r6overallsteps_moved}
+            <br></br>
+            suicides: {this.state.r6overallsuicides}
+          </Tab>
+        </Tabs>;
+        
+        
+        {/* <div className="playercasualdeaths">{this.state.r6casualdeaths}</div>
         <div className="playercasualkills">{this.state.r6casualkills}</div>
         <div className="playercasualkd">{this.state.r6casualkd}</div>
         <div className="playercasualwins">{this.state.r6casualwins}</div>
         <div className="playercasuallosses">{this.state.r6casuallosses}</div>
-        <div className="playercasualwlr">{this.state.r6casualwlr}</div>
+        <div className="playercasualwlr">{this.state.r6casualwlr}</div> */}
       </div>
     );
   }
