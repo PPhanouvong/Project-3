@@ -6,7 +6,7 @@ import LinkedIn from './In-White-34px-TM.png';
 
 const MyFooter = () => {
     return (
-        <div id='Footer'>
+        <div className='grey-text' id='Footer'>
             <Footer copyrights="&copy; 2018 Copyright"
                 // moreLinks={
                 //     // <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
@@ -20,7 +20,7 @@ const MyFooter = () => {
                 className='black'
             >
                 <h4 className="white-text">Project Team</h4>
-                <p id='FMessage' className="grey-text text-lighten-4">Project built for University of Central Florida Coding Bootcamp</p>
+                <p id='FMessage' className="grey-text text-lighten-4">University of Central Florida Coding Bootcamp</p>
             </Footer>
         </div>
     );

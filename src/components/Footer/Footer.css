@@ -1,14 +1,5 @@
 #Footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: black;
-    z-index: -999;
-  }
-
-  h4 {
-    Font-weight: bold;
   }
 
   #Name {
