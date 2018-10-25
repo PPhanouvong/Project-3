@@ -94,6 +94,7 @@ class SearchForm extends Component {
       <div>
         <form>
           <input
+            id='stats'
             type="text"
             placeholder="Username"
             name="username"
@@ -101,6 +102,7 @@ class SearchForm extends Component {
             onChange={this.handleInputChange}
           />
           <input
+            id='stats'
             type="text"
             placeholder="Platform (UPLAY, XONE, PS4)"
             name="platform"
@@ -124,6 +126,7 @@ class SearchForm extends Component {
             WLR: {this.state.r6casualwlr}
             <br></br>
           </Tab>
+          
           <Tab title="Ranked">
             Kills: {this.state.r6rankedkills}
             <br></br>
@@ -137,6 +140,7 @@ class SearchForm extends Component {
             <br></br>
             WLR: {this.state.r6rankedwlr}
           </Tab>
+
           <Tab title="Overall">
             assists: {this.state.r6overallassists}
             <br></br>
@@ -148,7 +152,7 @@ class SearchForm extends Component {
             <br></br>
             headshots: {this.state.r6overallheadshots}
             <br></br>
-            melee kills: {this.state.r6overallmelee_kills} 
+            melee kills: {this.state.r6overallmelee_kills}
             <br></br>
             pentration kills: {this.state.r6overallpentration_kills}
             <br></br>
@@ -161,14 +165,6 @@ class SearchForm extends Component {
             suicides: {this.state.r6overallsuicides}
           </Tab>
         </Tabs>;
-        
-        
-        {/* <div className="playercasualdeaths">{this.state.r6casualdeaths}</div>
-        <div className="playercasualkills">{this.state.r6casualkills}</div>
-        <div className="playercasualkd">{this.state.r6casualkd}</div>
-        <div className="playercasualwins">{this.state.r6casualwins}</div>
-        <div className="playercasuallosses">{this.state.r6casuallosses}</div>
-        <div className="playercasualwlr">{this.state.r6casualwlr}</div> */}
       </div>
     );
   }

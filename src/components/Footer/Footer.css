@@ -1,5 +1,9 @@
 #Footer {
     background-color: black;
+    /* line-height: 20%; */
+    column-count: 2;
+    column-width: 50%;
+    column-span: all;
   }
 
   #Name {
@@ -19,3 +23,7 @@
     position: relative;
     left: 10%;
   }
+
+  /* #copyright {
+    position: relative;
+  } */

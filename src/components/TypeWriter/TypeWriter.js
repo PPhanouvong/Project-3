@@ -4,10 +4,13 @@ import Typing from 'react-typing-animation';
 
 const TypeWriter = () => {
     return (
-        <Typing startDelay={50} hideCursor='true' speed={1}>
-            <span id='typing'> This line will stay. Test test test test test </span>
-            <span id='typing'> This line will get instantly removed after a 500 ms delay </span>
-            <Typing.Reset count={1} delay={500} />
+        <Typing startDelay={1000} hideCursor='true' speed={100}>
+            <div>
+                <span id='typing'> Welcome to the page.  </span>
+                <Typing.Delay ms={1000} />  <Typing.Backspace count={50} />
+                <span id='typing'> Please Sign up or Login to begin. </span>
+                <Typing.Reset count={2} delay={5000} />
+            </div>
         </Typing>
     );
 };

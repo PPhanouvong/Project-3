@@ -13,12 +13,13 @@ class App extends Component {
         <header>
           <MyNavbar />
 
-          {/* <TypeWriter /> */}
+          <TypeWriter />
         </header>
 
         <main>
           <MyContainer />
         </main>
+        
         <MyFooter />
 
       </div>
