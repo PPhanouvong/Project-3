@@ -5,15 +5,13 @@ import SearchForm from '../SearchForm';
 const MyContainer = () => {
     return (
         <div>
-        
             <br />
             
-            <div id='Search'>
+            <div>
                 <SearchForm />
             </div>
             
             <br />
-
         </div>
     );
 };

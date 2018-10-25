@@ -7,7 +7,7 @@ import LinkedIn from './In-White-34px-TM.png';
 const MyFooter = () => {
     return (
         <div className='grey-text' id='Footer'>
-            <Footer copyrights="&copy; 2018 Copyright"
+            <Footer id='copyright' copyrights="&copy; 2018 Copyright"
                 // moreLinks={
                 //     // <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
                 // }
